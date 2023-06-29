@@ -3,30 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Marcelo Glasberg</title>
+    <style>
+    body { font-family: "Arial"; background-color: #333340; color: #fff; padding: 30px; line-height: 1.5; }
+    li { line-height: 1.75; }
+    a { color: #ff8; }
+    h1 { margin-top: 30px;  margin-bottom: 5px; font-size: 3em; }
+    h2 { margin-top: 45px;  margin-bottom: 10px; font-size: 2em;}
+
+    #outer-list > li:not(:first-child) {
+        padding-top: 20px;
+    }
+
+    ol > li:not(:first-child) {
+        padding-top: 5px;
+    }
+    </style>
 </head>
-
-<style>
-body {
-    font-family: "Arial";
-    background-color: #333340;
-    color: #fff;
-    padding: 30px 30px 30px 30px;
-}
-
-a { color: #ff8; }
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
 
 <body>
 
@@ -105,7 +97,7 @@ UI/UX design, immutable data structures, state management, and theming (colors a
 memory management, image processing, mathematics, testing frameworks, translation and
 internationalization, animation, networking, and plugin development.
 
-<ul>
+<ul id="outer-list">
     <li>Java:
         <ul>
             <li><a href="https://plugins.jetbrains.com/plugin/7866-hibernate-inspections">Hibernate
@@ -205,29 +197,29 @@ I sometimes create some open source project that solves a hard problem, and then
 about it in Medium. Here are some of my articles:
 
 <ol>
-    <li>I'm in Google's official Flutter documentation:
-        <a href="https://flutter.dev/docs/development/ui/layout/constraints">Understanding
-            constraints</a>
-    </li>
     <li>
         <a href="https://medium.com/flutter-community/flutter-the-advanced-layout-rule-even-beginners-must-know-edc9516d1a2">
             Flutter: The Advanced Layout Rule Even Beginners Must Know</a>
-        (<a href="https://habr.com/ru/post/500210/">Russian version русский</a>,
-        <a href="https://medium.com/@suatozkaya/flutter-herkesin-bilmesi-gereken-temel-layout-kurallar%C4%B1-3395762b518e/">Turkish
-            version русский</a>,
-        <a href="https://code-khan.ir/%db%8c%da%a9-%d9%82%d8%a7%d9%86%d9%88%d9%86-%d9%85%d9%87%d9%85-%d8%af%d8%b1-%d9%81%d9%84%d8%a7%d8%aa%d8%b1/">Persian
-            version русский</a>)
+        <ul>
+            <li><a href="https://flutter.dev/docs/development/ui/layout/constraints">In Google's
+                official Flutter documentation (renamed as “Understanding constraints”)</a>
+            </li>
+            <li><a href="https://habr.com/ru/post/500210/">Russian version - русский</a></li>
+            <li>
+                <a href="https://medium.com/@suatozkaya/flutter-herkesin-bilmesi-gereken-temel-layout-kurallar%C4%B1-3395762b518e/">Turkish
+                    version - Türk Dili</a></li>
+            <li>
+                <a href="https://code-khan.ir/%db%8c%da%a9-%d9%82%d8%a7%d9%86%d9%88%d9%86-%d9%85%d9%87%d9%85-%d8%af%d8%b1-%d9%81%d9%84%d8%a7%d8%aa%d8%b1/">Persian
+                    version - فارسی</a></li>
+        </ul>
+
     </li>
     <li>
         <a href="https://medium.com/flutter-community/https-medium-com-marcglasberg-async-redux-33ac5e27d5f6">
             Async Redux: Flutter’s non-boilerplate version of Redux</a>
-        (<a href="https://medium.com/flutterando/async-redux-pt-brasil-e783ceb13c43">Portuguese
-        version</a>)
     </li>
     <li><a href="https://medium.com/flutter-community/i18n-extension-flutter-b966f4c65df9">
         i18n? Mind-blowing Easy Translations and Internationalization for Flutter</a>
-        (<a href="https://medium.com/flutterando/qual-a-forma-f%C3%A1cil-de-traduzir-seu-app-flutter-para-outros-idiomas-ab5178cf0336">Portuguese
-            version</a>)
     </li>
     <li>
         <a href="https://medium.com/flutter-community/announcing-fic-fast-immutable-collections-5eb091d1e31f">
@@ -240,10 +232,10 @@ about it in Medium. Here are some of my articles:
 </ol>
 
 My article about Flutter layout rules has become the de-facto go-to reference about layout, for
-Flutter developers. I was then asked by Google to let them publish it in their official
-documentation. The article's catchphrase, "Constraints go down, Sizes go up, Parent sets position,"
-has resonated with many, to the extent that it has become somewhat of a mantra for some. It's been
-featured on mugs sold at Flutter conventions.
+Flutter developers. I was then asked by Google to let them publish it in their
+<a href="https://flutter.dev/docs/development/ui/layout/constraints">official documentation</a>.
+The article's catchphrase, “Constraints go down, Sizes go up, Parent sets position”
+become somewhat of a mantra for some, and has been featured on mugs sold at Flutter conventions.
 
 <p><img src="mug.jpg" width="350" alt="Mug"></p>
 
