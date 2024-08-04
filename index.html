@@ -130,6 +130,36 @@
                 margin-bottom: 20px;
             }
         }
+
+        .catchphrase-container {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 40px;
+            margin-right: 75px;
+        }
+
+        .mug-image {
+            max-width: 280px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .catchphrase {
+            flex: 1;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .catchphrase-container {
+                flex-direction: column;
+            }
+
+            .mug-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -367,14 +397,14 @@
             <li>
                 <a href="https://codereview.kaio.dev/flutter-a-regra-de-layout-avan%C3%A7ado-que-at%C3%A9-iniciantes-devem-saber-59cfece74616">Portuguese
                     version - A Regra de Layout Avançado que até Iniciantes Devem Saber</a></li>
-
         </ul>
 
-        <p>The article's catchphrase, "<i>Constraints go down, Sizes go up, Parent sets
-            position</i>"
-            has been featured on mugs sold at Flutter conventions:</p>
-        <img src="mug.jpg" width="280" alt="Mug with catchphrase"
-             style="max-width: 100%; height: auto; border-radius: 10px;">
+        <div class="catchphrase-container">
+            <img src="mug.jpg" width="280" alt="Mug with catchphrase" class="mug-image">
+            <p class="catchphrase">The article's catchphrase, "<i>Constraints go down, Sizes go up,
+                Parent sets position</i>"
+                has been featured on mugs sold at Flutter conventions.</p>
+        </div>
 
     </div>
 
