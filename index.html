@@ -152,6 +152,25 @@
             margin: 0;
         }
 
+        .kalshi-container {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .kalshi-image {
+            max-width: 380px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .kalshi-text {
+            flex: 1;
+            margin: 0;
+            font-style: italic;
+        }
+
         @media (max-width: 600px) {
             .catchphrase-container {
                 flex-direction: column;
@@ -185,24 +204,16 @@
             <h2>Professional</h2>
             <p>Please see my <a href="https://www.linkedin.com/in/marcglasberg/">LinkedIn</a>.</p>
             I’ve led teams that built and launched mobile apps for American startups like Kalshi (B2C fintech),
-            Parkside (B2B fintech), and Pid (B2B2C marketplace) on both iOS and Android. Currently, I’m architecting and
-            developing an AI agent for MyText.ai, handling research and development, and both frontend and backend for
+            Parkside (B2B fintech), and Pid (B2B2C marketplace) on both iOS and Android. I’m currently architecting and
+            developing an AI agent for MyText.ai (B2B), handling research and development, and both frontend and backend for
             the web platform.</p>
-        </div>
 
-        <div class="section">
-            <h2>Academic</h2>
-            <ul>
-                <li>Aeronautical-Mechanical Engineer — Technological Institute of Aeronautics (<a
-                       href="http://www.ita.br/">ITA</a>), São Paulo; the very top engineering university in
-                    Brazil, founded by MIT professors.
-                </li>
-                <li>MBA — Management and Administration Institute (<a
-                       href="https://iag.puc-rio.br/en/home_en/">IAG</a>) of the <a
-                       href="https://www.puc-rio.br/english/">PUC-RJ</a> University, Rio de Janeiro,
-                    Brazil
-                </li>
-            </ul>
+            <div class="kalshi-container">
+                <img src="Kalshi_SouthPark.jpg" width="380" alt="Kalshi mobile app" class="kalshi-image">
+                <p class="kalshi-text">The app I built for Kalshi was shown in South Park 
+                    <a href="https://www.paramountplus.com/shows/video/SBvsNtEB_HO40K0gNxDCMaOKwCbEVnwz/">S275</a>
+                    ‘Conflict of Interest’, Sep 24, 2025</p>
+            </div>
         </div>
 
         <div class="section">
@@ -260,9 +271,8 @@
 
         <div class="section">
             <h2>Open Source Projects</h2>
-            <p>Despite a significant portion of my coding projects being proprietary, there’s an
-                extensive body of my work that is open source. This collection, spanning a broad
-                spectrum of topics, testifies to my versatile software development expertise.</p>
+            <p>An extensive body of my work is open source, covering a broad range of topics:</p>
+            <div style="height: 0.01em;"></div>
             <ul>
                 <li>TypeScript / JavaScript
                     <ul>
@@ -274,12 +284,15 @@
                 </li>
                 <li>React / React Native:
                     <ul>
-                        <li><a href="https://asyncredux.com">Async Redux</a> — Redux state management,
+                        <li><a href="https://kissforreact.org/">Kiss State</a> — State management,
                             for React.
+                        </li>
+                        <li><a href="https://rick-and-morty-example.expo.app/">Rick and Morty App</a> 
+                            — Example app using Kiss State (<a href="https://github.com/marcglasberg/rick-and-morty-example">source</a>).
                         </li>
                         <li><a href="https://github.com/marcglasberg/SameAppDifferentTech">Same App
                                 Different Tech</a> — The same app implemented with different tech stacks.
-                        </li>
+                        </li>                        
                     </ul>
                 </li>
                 <li>Dart:
@@ -300,8 +313,8 @@
                 </li>
                 <li>Flutter:
                     <ul>
-                        <li><a href="https://pub.dev/packages/async_redux">Async Redux</a> — Redux state
-                            management without the boilerplate, for Dart/Flutter
+                        <li><a href="https://asyncredux.com">Async Redux</a> — Redux state
+                            management without the boilerplate, for Dart/Flutter (<a href="https://pub.dev/packages/async_redux">source</a>)
                         </li>
                         <li><a href="https://pub.dev/packages/provider_for_redux">Provider for Redux</a>
                             — Lets you use Provider with Redux
@@ -352,7 +365,20 @@
         </div>
 
         <div class="section">
-            <h2>My Patents</h2>
+            <h2>Academic</h2>
+            <ul>
+                <li>Aeronautical-Mechanical Engineer — Technological Institute of Aeronautics (<a
+                       href="http://www.ita.br/">ITA</a>), São Paulo; the very top engineering university in
+                    Brazil, founded by MIT professors.
+                </li>
+                <li>MBA — Management and Administration Institute (<a
+                       href="https://iag.puc-rio.br/en/home_en/">IAG</a>) of the <a
+                       href="https://www.puc-rio.br/english/">PUC-RJ</a> University, Rio de Janeiro,
+                    Brazil
+                </li>
+            </ul>
+            <div style="height: 1em;"></div>
+            <h2>Patents</h2>
             <p>I am the sole inventor of the following patents, and I filed them <a
                    href="https://www.amazon.com/Patent-Yourself-Step-Step-Filing/dp/1413317197">myself</a>
                 in the USPTO.</p>
@@ -402,8 +428,8 @@
             </ul>
 
             <div class="catchphrase-container">
-                <img src="mug.jpg" width="280" alt="Mug with catchphrase" class="mug-image">
-                <p class="catchphrase">The article’s catchphrase, "<i>Constraints go down, Sizes go up,
+                <img src="mug.jpg" width="280" alt="Mug with catchphrase" class="mug-image">                                
+                <p class="catchphrase">My article’s catchphrase, "<i>Constraints go down, Sizes go up,
                         Parent sets position</i>"
                     has been featured on mugs sold at Flutter conventions.</p>
             </div>
