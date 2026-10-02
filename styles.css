@@ -205,11 +205,6 @@ h1 { font-size: clamp(2.5rem, 4.8vw, 4rem); letter-spacing: -.055em; line-height
   .header-name { transition: none; transform: none; }
   .topbar::after { transition: none; }
 }
-/* Desktop proportions match the preferred 75% view at normal browser zoom. */
-@media screen and (min-width: 761px) {
-  :root { font-size: 12px; }
-  h1 { font-size: clamp(2.5rem, 3.6vw, 4rem); }
-}
 @media print {
   .profile-fractal { display: none; }
   .topbar, .skip-link, .footer { display: none; }
