@@ -14,9 +14,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
   <script src="script.js?v=3" defer></script>
-  <script src="fractal.js?v=6" defer></script>
+  <script src="vendor/three.r134.min.js" defer></script>
+  <script src="vendor/vanta.waves.0.5.24.min.js" defer></script>
+  <script src="waves.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,7 +40,7 @@
 <main id="main">
 
   <div class="profile-band">
-    <canvas class="profile-fractal" aria-hidden="true"></canvas>
+    <div class="profile-waves" aria-hidden="true"></div>
   <header class="profile container" id="top">
     <img width="248" height="248" fetchpriority="high" src="https://avatars.githubusercontent.com/u/13332110?s=460&u=260acc9f942ebc74dc729fbfc39891f50fbbb359&v=4"
          alt="Marcelo Glasberg">

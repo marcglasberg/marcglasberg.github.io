@@ -71,8 +71,11 @@ nav a:hover, nav a[aria-current] { color: var(--accent); text-decoration: underl
 [data-theme="dark"] .sun { display: block; }
 .profile-band { position: relative; isolation: isolate; border-bottom: 0.0625rem solid transparent; }
 .profile { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 14rem; align-items: center; gap: 3.5rem; padding: 3.5rem 3rem 3.75rem 0; }
-.profile-fractal { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; border: 0; background: #f3f4f2; }
-[data-theme="dark"] .profile-fractal { background: #15251d; }
+.profile-waves { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border: 0; background: #f3f4f2; }
+/* A uniform blend preserves text contrast without fading the effect at its edges. */
+.profile-waves .vanta-canvas { opacity: .24; }
+[data-theme="dark"] .profile-waves { background: #15251d; }
+[data-theme="dark"] .profile-waves .vanta-canvas { opacity: .35; }
 .profile > img { grid-column: 2; grid-row: 1; width: 14rem; height: 14rem; object-fit: cover; border-radius: 2.25rem; box-shadow: 1.125rem 1.125rem 0 rgb(0 0 0 / 8%); }
 .profile-info { grid-column: 1; grid-row: 1; }
 h1 { font-size: clamp(2.5rem, 4.8vw, 4rem); letter-spacing: -.055em; line-height: 1.13; font-weight: 750; margin-bottom: 1.625rem; }
@@ -206,7 +209,7 @@ h1 { font-size: clamp(2.5rem, 4.8vw, 4rem); letter-spacing: -.055em; line-height
   .topbar::after { transition: none; }
 }
 @media print {
-  .profile-fractal { display: none; }
+  .profile-waves { display: none; }
   .topbar, .skip-link, .footer { display: none; }
   :root, :root[data-theme="dark"] { --bg: white; --surface: white; --ink: black; --text: #222; --accent: #175d49; --line: #ccc; --soft: #f3f3f3; }
   body { font-size: 11pt; }
